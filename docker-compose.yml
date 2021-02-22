@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  dnstool:
+    build: .
+    container_name: dnstool
+    command: ["./app"]
+    restart: always
+    network_mode: "bridge"
